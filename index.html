@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <style type="text/css">
+    #caja{
+        border: 2px solid black;
+        width: 300px;
+        display: inline-block;
+    }
+    #btn_special{
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <h1>jQuery - assignament 1</h1>
+
+    <div id="caja">
+        <img src="gato.jpg" width="300px">
+    </div>
+
+    <div id="caja">
+        <img src="gato.jpg" width="300px">
+    </div>
+
+    <div id="caja">
+        <img src="gato.jpg" width="300px">
+    </div>
+
+    <div id="caja">
+        <img src="gato.jpg" width="300px">
+    </div>
+
+    <div id="caja">
+        <img src="gato.jpg" width="300px">
+    </div>
+
+    <div id="caja">
+        <img src="gato.jpg" width="300px">
+    </div>
+
+    <div id="caja">
+        <img src="gato.jpg" width="300px">
+    </div>
+
+    <div id="caja">
+        <img src="gato.jpg" width="300px">
+    </div>
+
+    <button id="btn_special">Restaurar</button>
+
+    <script> //cuando se haga click en cualquier parrafo, esconder el parafo que fue clickeado 
+        $(document).ready(function(){
+            $("img").click(function(){
+                $(this).hide();
+            })
+        });
+    </script>
+
+<script> //cuando se haga click en cualquier parrafo, esconder el parafo que fue clickeado 
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("img").fadeIn();
+        })
+    });
+</script>
+    
+</body>
+</html>
